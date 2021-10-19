@@ -1,0 +1,9 @@
+.mission{
+    background-color: rgb(177, 216, 231);
+}
+.mission h2{
+    color:navy;
+}
+body{
+    overflow-x: hidden;
+}
