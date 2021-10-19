@@ -2,6 +2,7 @@ import React from 'react';
 import {useState , useEffect} from 'react';
 import Service from '../Service/Service';
 import './Services.css';
+import logo from "../../../images/logo6.png"
 
 const Services = () => {
      const [services, setServices] = useState([]);
@@ -15,7 +16,7 @@ const Services = () => {
 
     return (
         <div id="services">
-            <h2>Qudrah Women's Healthcare Services</h2>
+           <img className='img-fluid'  src={logo} alt="" /> <h2>Qudrah Women's Healthcare Services</h2>
           <div className='row'>
             <div className= 'services-part '>
       {

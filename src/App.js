@@ -7,6 +7,7 @@ import Header from './Pages/Home/Header/Header';
 import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/Home/NotFound/NotFound';
 import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
 import Speciality from './Pages/Speciality/Speciality/Speciality';
 
 
@@ -30,6 +31,9 @@ function App() {
        </Route>
        <Route path='/login'>
        <Login></Login>
+       </Route>
+       <Route path='/register'>
+       <Register></Register>
        </Route>
        <Route exact path='*'>
        <NotFound></NotFound>
