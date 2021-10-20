@@ -1,4 +1,6 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
+import img from '../../../images/aboutUs/handshake2.jpg';
 import './Mission.css';
 
 const Mission = () => {
@@ -29,6 +31,7 @@ const Mission = () => {
 
   </div>
          </div>
+            <Card.Img variant="bottom" src={img}  className='about-img'/> 
         </div>
     );
 };
