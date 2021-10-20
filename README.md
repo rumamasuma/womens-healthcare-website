@@ -1,8 +1,16 @@
-# Getting Started with Create React App
+# Qudrah Women's Health Care 
+## website live link https://qudrah-healthcare-site.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## It is a health care website - including 
+- totally womens health care facility
+- hospitals services
+- doctors appointment
+- specialist department
+- virtual consultation
+-  mission & vission
+-  child specialist info
 
 In the project directory, you can run:
 
