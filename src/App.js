@@ -28,9 +28,9 @@ function App() {
        <Route exact path='/home'>
        <Home></Home>
        </Route>
-       <Route exact path='/doctors'>
+       <PrivateRoute exact path='/doctors'>
          <Doctors></Doctors>
-       </Route>
+       </PrivateRoute>
        <Route exact path='/speciality'>
        <Speciality></Speciality>
        </Route>
@@ -40,9 +40,9 @@ function App() {
        <Route path='/consultation'>
        <Consultation></Consultation>
        </Route>
-       <Route path='/serviceDetails/:serviceId'>
+       <PrivateRoute path='/serviceDetails/:serviceId'>
        <ServiceDetails></ServiceDetails>
-       </Route>
+       </PrivateRoute>
        <Route path='/register'>
        <Register></Register>
        </Route>

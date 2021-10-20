@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button'
-import { Link } from 'react-router-dom';
+import { Link ,useLocation ,useHistory} from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import login from '../../../images/login.jpg'
 import initializeAuthentication from '../Firebase/firebase.init';
@@ -10,13 +10,28 @@ import './Login.css';
 initializeAuthentication();
 
 const Login = () => {
-
+  
   const {signInUsingGoogle,handleEmailChange, handlePasswordChange ,
      error ,handleLogin } = useAuth();
+
+     // redirects location
+   const location = useLocation();
+   const history = useHistory();
+   const redirect_uri = location.state?.from || '/home';
+
+  //  console.log('came from', location.state?.from);
+
+   const handleGoogleLogin =() =>{
+    signInUsingGoogle()
+    .then(result =>{
+         history.push(redirect_uri);
+    })
+    
+   }
       
     return (
         <div className='row m-4'>
-            <h2 className='login-heading '><i>Please Login For Medical Consultation</i></h2>
+            <h2 className='login-heading '><i>Please Login </i></h2>
         <div className="col-md-5">
       <img src={login} alt="" />
         </div>
@@ -44,7 +59,7 @@ const Login = () => {
 
   {/* google sign in button */}
 
-  <Button onClick={signInUsingGoogle}  size="sm" className='p-2 m-2 button-regular'>
+  <Button onClick={handleGoogleLogin}  size="sm" className='p-2 m-2 button-regular'>
     Google Sign In
   </Button>
 </Form>

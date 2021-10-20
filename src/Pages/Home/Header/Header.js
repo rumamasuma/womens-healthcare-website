@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Nav ,Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import { HashLink } from 'react-router-hash-link';
 import logo from '../../../images/logo6.png'
 import './Header.css';
 
@@ -17,8 +18,8 @@ const Header = () => {
     <Navbar.Brand href="#home"> <img  className='img-fluid ' src={logo} alt="" />Qudrah Women's Health Care</Navbar.Brand>
     <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
-          <Nav.Link as={Link} to="/home#home">Home</Nav.Link>
-          <Nav.Link as={Link} to="/home#services">Services</Nav.Link>
+          <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
+          <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
           <Nav.Link as={Link} to="/doctors">Doctors</Nav.Link>
           <Nav.Link as={Link} to="/speciality">Speciality</Nav.Link>
           {/* <Nav.Link as={Link} to="/consultation">Consultation</Nav.Link> */}

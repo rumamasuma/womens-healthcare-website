@@ -18,11 +18,8 @@ const googleProvider = new GoogleAuthProvider();
 
 // google sign in
 const signInUsingGoogle =() =>{
-    signInWithPopup(auth, googleProvider)
-    .then( result =>{
-       setUser(result.user);
-    });
-  
+    return  signInWithPopup(auth, googleProvider);
+   
 }
 // email handle
  const handleEmailChange = e =>{

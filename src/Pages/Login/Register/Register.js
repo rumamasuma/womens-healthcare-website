@@ -2,25 +2,25 @@ import React from 'react';
 import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../../hooks/useFirebase';
 import initializeAuthentication from '../Firebase/firebase.init';
 import register from  '../../../images/register.jpg'
+import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
   initializeAuthentication();
-    const {signInUsingGoogle , handleRegistration, handleEmailChange, handlePasswordChange , error} = useFirebase();
+    const {signInUsingGoogle , handleRegistration, handleEmailChange, handlePasswordChange , user,error} = useAuth();
 
     return (
         <div className='row m-4'>
-        <h2 className='login-heading '><i>Please Register For Medical Consultation</i></h2>
+        <h2 className='login-heading '><i>Please Register </i></h2>
     <div className="col-md-5">
   <img src={register} alt="" />
     </div>
     <div className="col-md-4 login-card col-sm-12 mt-3 p-2">
     <Form  onSubmit ={handleRegistration}>
         <Form.Group className="mb-3" controlId="formBasicName">
-          <Form.Label>Patient's Name</Form.Label>
-          <Form.Control type="name" placeholder="Enter name"  required />
+          <Form.Label>Patient's Name </Form.Label>
+          <Form.Control type={user.displayName} placeholder="Enter name"  required />
          </Form.Group>
           
           <Form.Group className="mb-3" controlId="formBasicEmail">
