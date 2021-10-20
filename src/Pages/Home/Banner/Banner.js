@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <div>
            <div className="banner-part">
-<h2>this is banner</h2>
+{/* <h1 className='banner-heading text-primary p-2'>Qudrah Women's Health Care</h1> */}
 
            </div>
         </div>

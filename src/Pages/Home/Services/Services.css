@@ -1,5 +1,17 @@
 .services-part{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-   
+    padding: 20px;
+   grid-gap:20px;
+}
+/* responsive */
+@media only screen and (max-width:688px){
+    .services-part{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:991px) and (min-width:689px){
+    .services-part{
+        grid-template-columns: repeat(2,1fr);
+    }
 }

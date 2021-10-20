@@ -4,7 +4,7 @@ import './Mission.css';
 const Mission = () => {
     return (
         <div className='m-5'>
-         {/* <h2> Our Mission & Vission</h2>    */}
+         <h2 className='about-heading2'><i> Our Mission & Vission</i></h2>   
          <div className='row d-flex align-items-center mission p-2 '>
   <div className=" col-md-6 col-sm-12 p-2">
    <h2>Mission</h2>

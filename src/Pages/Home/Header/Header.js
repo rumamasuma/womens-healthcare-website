@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container, Nav ,Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/logo6.png'
 import './Header.css';
 
 
 const Header = () => {
   
-  const {user, logOut}= useFirebase();
+  const {user, logOut}= useAuth();
 
     return (
         <>
@@ -24,8 +24,9 @@ const Header = () => {
           {/* <Nav.Link as={Link} to="/consultation">Consultation</Nav.Link> */}
          
           {
-            user.displayName? 
-            <button onClick={logOut} className='button-regular text-white rounded m-2'>Log Out</button>
+            user?.email? 
+            <button onClick={logOut} className='button-regular text-white rounded m-2'>
+              Log Out</button>
                   :
              <Nav.Link as={Link} to="/login">Login</Nav.Link>
           }

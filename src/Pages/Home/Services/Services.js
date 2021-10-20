@@ -15,16 +15,17 @@ const Services = () => {
 
 
     return (
-        <div id="services">
+        <div id="services" className='container'>
            <img className='img-fluid'  src={logo} alt="" /> <h2>Qudrah Women's Healthcare Services</h2>
-          <div className='row'>
-            <div className= 'services-part '>
-      {
-    services.map( service => <Service  key={service.id}
+          <div className='row  ' >     
+     <div className= 'services-part '>
+     {
+         services.map( service => <Service  key={service.id}
         service ={service}
-    ></Service>)
+    > </Service>)
        }
-       </div> 
+     </div>
+      
       </div>
   </div>
     );
