@@ -1,0 +1,16 @@
+.details-button{
+    border: 1px solid seagreen;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    font-weight: 600; 
+    font-size: large;
+    color: seagreen;
+    background-color: seashell;
+}
+.serviceDetail-card{
+    border: 2px solid seagreen;
+    border-radius: 20px;
+    /* height: 600px; */
+    width: 900px;
+}

@@ -7,7 +7,6 @@ initializeAuthentication();
 
 
 const useFirebase = () => {
-
 const [user, setUser] = useState({});
 const [email, setEmail] = useState('');
 const [password , setPassword] = useState('');
@@ -19,7 +18,6 @@ const googleProvider = new GoogleAuthProvider();
 
 // google sign in
 const signInUsingGoogle =() =>{
-   
     signInWithPopup(auth, googleProvider)
     .then( result =>{
        setUser(result.user);
@@ -92,7 +90,7 @@ useEffect(() =>{
       return ()=> unsubscribed;
 },[])
     return {
-               user, signInUsingGoogle , logOut , handleRegistration , handleEmailChange ,handlePasswordChange ,error ,handleLogin
+           user, signInUsingGoogle , logOut , handleRegistration , handleEmailChange ,handlePasswordChange ,error ,handleLogin
           }
 };
 

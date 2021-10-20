@@ -43,7 +43,6 @@ function App() {
        <Route path='/serviceDetails/:serviceId'>
        <ServiceDetails></ServiceDetails>
        </Route>
-
        <Route path='/register'>
        <Register></Register>
        </Route>

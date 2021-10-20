@@ -32,9 +32,9 @@ const Header = () => {
           }
       
          
-          <Navbar.Text>
+     { user.email && <Navbar.Text>
             Signed in as: <a href="#login">{user.displayName}</a>
-      </Navbar.Text>
+      </Navbar.Text>}
     </Navbar.Collapse>
     </Container>
   </Navbar> 

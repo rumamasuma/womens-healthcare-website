@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/Fm6Qyp6/gynocologist.jpg",
+      "name": "Ambia Ahmed",
+      "designation": "Gynocologist",
+      "visitingDay1": "Monday-Friday   4.00pm-8.00pm",
+      "visitingDay2": "Saturday    6.00pm-8.00pm",
+      "visitingDay3": "Sunday    5.00pm-8.00pm"
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/ngcgvDg/dentist.jpg",
+      "name": "Ayesha Akter",
+      "designation": "Dentist",
+      "visitingDay1": "Monday   4.00pm-6.00pm",
+      "visitingDay2": "Saturday   4.00pm-7.00pm",
+      "visitingDay3": "Sunday    5.00pm-8.00pm"
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/mRKFt68/surgeon.jpg",
+      "name": "Sarah Sarmita",
+      "designation": "Surgeon",
+      "visitingDay1": "Satuarday- Tuesday   4.00pm-8.00pm",
+      "visitingDay2": "Friday   4.00pm-7.00pm",
+      "visitingDay3": "Closed"
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/94gsh0h/Smiling-female-doctor-with-lab-coat-in-her-office-holding-a-clipboard-with-medical-records-she-is-lo.jpg",
+      "name": "Sarmin Jahan",
+      "designation": " Reproductive Endocrinologist",
+      "visitingDay1": "Sunday-Tuesday  4.00pm-6.00pm",
+      "visitingDay2": "Closed",
+      "visitingDay3": "Satuarday    5.00pm-7.00pm"
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/jksgmHd/child-Specialist.jpg",
+      "name": "Rubaiya Rahman",
+      "designation": "Child Specialist",
+      "visitingDay1": "Monday-Wednesday 4.00pm-8.00pm",
+      "visitingDay2": "Saturday    6.00pm-8.00pm",
+      "visitingDay3": "Sunday     5.00pm-8.00pm"
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/t481NKw/gyni.jpg",
+      "name": "Rumana Ruma",
+      "designation": "Gynocologist",
+      "visitingDay1": "Monday  4.00pm-8.00pm",
+      "visitingDay2": "Tuesday 6.00pm-8.00pm",
+      "visitingDay3": "Saturday 5.00pm-8.00pm"
+    }
+  ]

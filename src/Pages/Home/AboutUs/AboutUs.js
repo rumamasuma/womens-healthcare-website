@@ -15,7 +15,7 @@ const AboutUs = () => {
    <h5 className='m-5'>Qudrah Women's Health Care has all the characteristics of a world-class hospital with wide range of services and specialists, equipments and technology, ambience and service quality.The skilled nurses, technologists and administrators of Bangladesh Specialized Hospital, aided by state-of-the-art equipments, provide a congenial infrastructure for the medical professionals in providing healthcare of international standards. </h5>
       </Card.Text>
     </Card.Body>
-    <Card.Img variant="bottom" src={img}  className='about-img'/>
+    {/* <Card.Img variant="bottom" src={img}  className='about-img'/> */}
   </Card>
        </div>
     );
