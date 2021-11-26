@@ -16,7 +16,7 @@ const Services = () => {
 
     return (
         <div id="services" className='container'>
-           <img className='img-fluid'  src={logo} alt="" /> <h2>Qudrah Women's Healthcare Services</h2>
+           <img className='img-fluid'  src={logo} alt="" /> <h2>Qudrah Women's Healthcare Best Services</h2>
           <div className='row  ' >     
      <div className= 'services-part '>
      {
