@@ -1,5 +1,6 @@
 # Qudrah Women's Health Care 
 ## website live link https://qudrah-healthcare-site.netlify.app/
+## Firebase hosting link https://healthcare-website-firebase.web.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
